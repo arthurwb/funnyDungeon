@@ -12,6 +12,12 @@ html, body {
     padding-right: 0;
 }
 
+.row .border {
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
 .nav-item {
     width: 90%;
     background-color: white;
@@ -19,4 +25,9 @@ html, body {
     white-space: normal;
     margin: 5px;
     padding: 5px;
+}
+
+.nation-header {
+    text-align: center;
+    margin: auto;
 }

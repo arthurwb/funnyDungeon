@@ -31,6 +31,27 @@ function fillnav() {
     `);
 }
 
+function fillNations() {
+    var nationData;
+    $.getJSON("./data/nations.json", function(json) {
+        nationData = json;
+        console.log(nationData);
+    });
+    $("#nationInfo").append(`
+        <div class="col-3 nation-header">
+            <h3>
+            <a class="">Maldantis</a>
+            </h3>
+        </div>
+        <div class="col">
+            <p class="align-middle">
+            Link
+            </p>
+            <img src="images/maldantis_thumb.png" alt="Maldantis Thumbnail"> 
+        </div>
+    `);
+}
+
 function testPath(pathName) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
@@ -42,6 +63,7 @@ function testPath(pathName) {
             break;
         case 'worldpages.html':
             console.log("world pages");
+            fillNations();
             break;
     }
 }
