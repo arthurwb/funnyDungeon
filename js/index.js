@@ -31,25 +31,28 @@ function fillnav() {
     `);
 }
 
-function fillNations() {
+async function fillNations() {
     var nationData;
-    $.getJSON("./data/nations.json", function(json) {
+    await $.getJSON("./data/nations.json", function(json) {       // for prod, change to local directory when pushed
         nationData = json;
-        console.log(nationData);
     });
-    $("#nationInfo").append(`
-        <div class="col-3 nation-header">
-            <h3>
-            <a class="">Maldantis</a>
-            </h3>
-        </div>
-        <div class="col">
-            <p class="align-middle">
-            Link
-            </p>
-            <img src="images/maldantis_thumb.png" alt="Maldantis Thumbnail"> 
-        </div>
-    `);
+    nationData.forEach(nation => {
+        $("#nationInfo").append(`
+            <div class="row border">
+                <div class="col-3 nation-header">
+                    <h3>
+                    <a class="">${nation.name}</a>
+                    </h3>
+                </div>
+                <div class="col">
+                    <p class="align-middle">
+                    Link
+                    </p>
+                    <img src="images/${nation.image}" alt="Maldantis Thumbnail"> 
+                </div>
+            </div>
+        `);
+    });
 }
 
 function testPath(pathName) {
