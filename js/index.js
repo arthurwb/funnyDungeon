@@ -48,7 +48,7 @@ async function fillNations() {
                     <p class="align-middle">
                     Link
                     </p>
-                    <img src="images/${nation.image}" alt="Maldantis Thumbnail"> 
+                    <img src="images/${nation.image}" alt="${nation.name} Thumbnail"> 
                 </div>
             </div>
         `);
