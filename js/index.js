@@ -15,8 +15,8 @@ function fillnav() {
                     Utilities
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="./utilpages/music.html">Music</a>
-                    <a class="dropdown-item" href="./utilpages/timer.html">Timer</a>
+                    <button class="dropdown-item" href="./utilpages/music.html">Music</button>
+                    <button class="dropdown-item" href="./utilpages/timer.html">Timer</button>
                 </div>
             </div>
             <div>
@@ -33,7 +33,7 @@ function fillnav() {
 
 async function fillNations() {
     var nationData;
-    await $.getJSON("./data/nations.json", function(json) {       // for prod, change to local directory when pushed
+    await $.getJSON("https://arthurwb.github.io/funnyDungeon/data/nations.json", function(json) {       // for prod, change to local directory when pushed
         nationData = json;
     });
     nationData.forEach(nation => {
