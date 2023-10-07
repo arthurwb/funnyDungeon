@@ -49,3 +49,7 @@ html, body {
     text-align: center;
     margin: auto;
 }
+
+.nation-img {
+    width: 100%;
+}
