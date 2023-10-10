@@ -2,16 +2,16 @@
     {
         "name": "Maldantis",
         "info": "Sample",
-        "image": "maldantis_thumb.png"
+        "image": "maldantis.png"
     },
     {
         "name": "Hogreve",
         "info": "Sample",
-        "image": "hogreve_thumb.png"
+        "image": "hogreve.png"
     },
     {
         "name": "Kirhall",
         "info": "Sample",
-        "image": "kirhall_thumb.png"
+        "image": "kirhall.png"
     }
 ]

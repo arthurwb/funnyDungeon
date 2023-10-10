@@ -96,6 +96,6 @@ async function testPath(pathName) {
 
 window.addEventListener("load", (event) => {
     const pathName = location.pathname;
-    testPath(pathName);
     fillnav();
+    testPath(pathName);
   });
